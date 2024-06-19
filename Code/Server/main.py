@@ -17,7 +17,7 @@ print('line16')
 from PyQt5.QtWidgets import *
 print('line18')
 from PyQt5.QtGui import *
-
+print('line20')
 
 class mywindow(QMainWindow,Ui_server_ui):
     
