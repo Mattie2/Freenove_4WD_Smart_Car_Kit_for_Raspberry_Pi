@@ -9,9 +9,13 @@ from Thread import *
 from threading import Thread
 from server import Server
 from server_ui import Ui_server_ui
+print('line12')
 from PyQt5 import QtCore, QtGui, QtWidgets
+print('line14')
 from PyQt5.QtCore import *
+print('line16')
 from PyQt5.QtWidgets import *
+print('line18')
 from PyQt5.QtGui import *
 
 
