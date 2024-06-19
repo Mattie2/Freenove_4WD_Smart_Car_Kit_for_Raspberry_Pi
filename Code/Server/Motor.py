@@ -80,6 +80,12 @@ class Motor:
             self.pwm.setMotorPwm(5, 4095)
 
     def setMotorModel(self, duty1, duty2, duty3, duty4):
+        """
+        duty1: front left wheel
+        duty2: back left wheel
+        duty3: front right wheel
+        duty4: back right wheel
+        """
         duty1, duty2, duty3, duty4 = self.duty_range(duty1, duty2, duty3, duty4)
         self.left_Upper_Wheel(-duty1)
         self.left_Lower_Wheel(-duty2)

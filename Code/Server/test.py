@@ -25,6 +25,20 @@ from Motor import *
 PWM=Motor()          
 def test_Motor(): 
     try:
+        PWM.setMotorModel(1000,0,0,0)
+        print("Front left wheel forward")
+        time.sleep(1)
+        PWM.setMotorModel(0,1000,0,0)
+        print("Back left wheel forward")
+        time.sleep(1)
+        PWM.setMotorModel(0,0,1000,0)
+        print("Front right wheel forward")
+        time.sleep(1)
+        PWM.setMotorModel(0,0,0,1000)
+        print("Back right wheel forward")
+        time.sleep(1)
+
+
         PWM.setMotorModel(1000,1000,1000,1000)       #Forward
         print ("The car is moving forward")
         time.sleep(1)
